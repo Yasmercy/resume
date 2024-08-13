@@ -1,64 +1,29 @@
-This is LuaHBTeX, Version 1.16.1 (MiKTeX 23.4) (format=lualatex 2024.8.12)  12 AUG 2024 11:43
- restricted system commands enabled.
-**resume.tex
-(./resume.tex
+This is pdfTeX, Version 3.141592653-2.6-1.40.25 (MiKTeX 23.4) (preloaded format=pdflatex 2024.8.13)  13 AUG 2024 22:13
+entering extended mode
+ restricted \write18 enabled.
+ %&-line parsing enabled.
+**./resume.tex
+(resume.tex
 LaTeX2e <2022-11-01> patch level 1
-Lua module: luaotfload 2022-10-03 3.23 Lua based OpenType font support
-Lua module: lualibs 2022-10-04 2.75 ConTeXt Lua standard libraries.
-Lua module: lualibs-extended 2022-10-04 2.75 ConTeXt Lua libraries -- extended c
-ollection.
-luaotfload | conf : Root cache directory is "C:/Users/ianch/AppData/Local/MiKTeX
-/luatex-cache/generic/names".
-luaotfload | init : Loading fontloader "fontloader-2022-10-03.lua" from kpse-res
-olved path "C:/Program Files/MiKTeX/tex/luatex/luaotfload/fontloader-2022-10-03.
-lua".
-Lua-only attribute luaotfload@noligature = 1
-luaotfload | init : Context OpenType loader version 3.120
-Inserting `luaotfload.node_processor' in `pre_linebreak_filter'.
-Inserting `luaotfload.node_processor' in `hpack_filter'.
-Inserting `luaotfload.glyph_stream' in `glyph_stream_provider'.
-Inserting `luaotfload.define_font' in `define_font'.
-Lua-only attribute luaotfload_color_attribute = 2
-luaotfload | conf : Root cache directory is "C:/Users/ianch/AppData/Local/MiKTeX
-/luatex-cache/generic/names".
-Inserting `luaotfload.harf.strip_prefix' in `find_opentype_file'.
-Inserting `luaotfload.harf.strip_prefix' in `find_truetype_file'.
-Removing  `luaotfload.glyph_stream' from `glyph_stream_provider'.
-Inserting `luaotfload.harf.glyphstream' in `glyph_stream_provider'.
-Inserting `luaotfload.harf.finalize_vlist' in `post_linebreak_filter'.
-Inserting `luaotfload.harf.finalize_hlist' in `hpack_filter'.
-Inserting `luaotfload.cleanup_files' in `wrapup_run'.
-Inserting `luaotfload.harf.finalize_unicode' in `finish_pdffile'.
-Inserting `luaotfload.glyphinfo' in `glyph_info'.
-Lua-only attribute luaotfload.letterspace_done = 3
-Inserting `luaotfload.aux.set_sscale_dimens' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.set_font_index' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.patch_cambria_domh' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.fixup_fontdata' in `luaotfload.patch_font_unsafe'.
-Inserting `luaotfload.aux.set_capheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.aux.set_xheight' in `luaotfload.patch_font'.
-Inserting `luaotfload.rewrite_fontname' in `luaotfload.patch_font'. L3 programm
-ing layer <2023-04-20>
-Inserting `tracingstacklevels' in `input_level_string'.
-("C:/Program Files/MiKTeX/tex/latex/base/article.cls"
+L3 programming layer <2023-04-20>
+(C:\Program Files\MiKTeX\tex/latex/base\article.cls
 Document Class: article 2022/07/02 v1.4n Standard LaTeX document class
-("C:/Program Files/MiKTeX/tex/latex/base/size11.clo"
+(C:\Program Files\MiKTeX\tex/latex/base\size11.clo
 File: size11.clo 2022/07/02 v1.4n Standard LaTeX file (size option)
-luaotfload | db : Font names database loaded from C:/Users/ianch/AppData/Local/M
-iKTeX/luatex-cache/generic/names/luaotfload-names.luc.gz)
-\c@part=\count183
-\c@section=\count184
-\c@subsection=\count185
-\c@subsubsection=\count186
-\c@paragraph=\count187
-\c@subparagraph=\count188
-\c@figure=\count189
-\c@table=\count190
+)
+\c@part=\count185
+\c@section=\count186
+\c@subsection=\count187
+\c@subsubsection=\count188
+\c@paragraph=\count189
+\c@subparagraph=\count190
+\c@figure=\count191
+\c@table=\count192
 \abovecaptionskip=\skip48
 \belowcaptionskip=\skip49
-\bibindent=\dimen139
+\bibindent=\dimen140
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/fancyhdr/fancyhdr.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/fancyhdr\fancyhdr.sty
 Package: fancyhdr 2024/07/23 v4.3.1 Extensive control of page headers and foote
 rs
 \f@nch@headwidth=\skip50
@@ -71,91 +36,94 @@ rs
 \f@nch@O@olf=\skip57
 \f@nch@O@orf=\skip58
 )
-(./style.sty)
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/enumitem/enumitem.sty
+(style.sty)
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/enumitem\enumitem.sty
 Package: enumitem 2019/06/20 v3.9 Customized lists
 \enitkv@toks@=\toks16
 \labelindent=\skip59
-\enit@outerparindent=\dimen140
+\enit@outerparindent=\dimen141
 \enit@toks=\toks17
 \enit@inbox=\box51
-\enit@count@id=\count191
-\enitdp@description=\count192
+\enit@count@id=\count193
+\enitdp@description=\count194
 )
-("C:/Program Files/MiKTeX/tex/latex/hyperref/hyperref.sty"
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hyperref.sty
 Package: hyperref 2023-04-22 v7.00x Hypertext links for LaTeX
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/ltxcmds/ltxcmds.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/ltxcmds\ltxcmds.sty
 Package: ltxcmds 2023-12-04 v1.26 LaTeX kernel commands for general use (HO)
 )
-("C:/Program Files/MiKTeX/tex/generic/iftex/iftex.sty"
+(C:\Program Files\MiKTeX\tex/generic/iftex\iftex.sty
 Package: iftex 2022/02/03 v1.0f TeX engine tests
 )
-("C:/Program Files/MiKTeX/tex/generic/pdftexcmds/pdftexcmds.sty"
+(C:\Program Files\MiKTeX\tex/generic/pdftexcmds\pdftexcmds.sty
 Package: pdftexcmds 2020-06-27 v0.33 Utility functions of pdfTeX for LuaTeX (HO
 )
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/infwarerr/infwarerr.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/infwarerr\infwarerr.sty
 Package: infwarerr 2019/12/03 v1.5 Providing info/warning/error messages (HO)
 )
 Package pdftexcmds Info: \pdf@primitive is available.
 Package pdftexcmds Info: \pdf@ifprimitive is available.
 Package pdftexcmds Info: \pdfdraftmode found.
-\pdftexcmds@toks=\toks18
 )
-("C:/Program Files/MiKTeX/tex/latex/graphics/keyval.sty"
+(C:\Program Files\MiKTeX\tex/latex/graphics\keyval.sty
 Package: keyval 2022/05/29 v1.15 key=value parser (DPC)
-\KV@toks@=\toks19
+\KV@toks@=\toks18
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/kvsetkeys/kvsetkeys.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/kvsetkeys\kvsetkeys.sty
 Package: kvsetkeys 2022-10-05 v1.19 Key value parser (HO)
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/kvdefinekeys/kvdefinekeys.st
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/kvdefinekeys\kvdefinekeys.st
 y
 Package: kvdefinekeys 2019-12-19 v1.6 Define keys (HO)
-) (C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/pdfescape/pdfescape.sty
+) (C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/pdfescape\pdfescape.sty
 Package: pdfescape 2019/12/09 v1.15 Implements pdfTeX's escape features (HO)
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/hycolor/hycolor.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/hycolor\hycolor.sty
 Package: hycolor 2020-01-27 v1.10 Color options for hyperref/bookmark (HO)
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/letltxmacro/letltxmacro.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/letltxmacro\letltxmacro.sty
 Package: letltxmacro 2019/12/03 v1.6 Let assignment for LaTeX macros (HO)
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/auxhook/auxhook.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/auxhook\auxhook.sty
 Package: auxhook 2019-12-17 v1.6 Hooks for auxiliary files (HO)
 )
-("C:/Program Files/MiKTeX/tex/latex/hyperref/nameref.sty"
+(C:\Program Files\MiKTeX\tex/latex/hyperref\nameref.sty
 Package: nameref 2022-05-17 v2.50 Cross-referencing by name of section
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/refcount/refcount.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/refcount\refcount.sty
 Package: refcount 2019/12/15 v3.6 Data extraction from label references (HO)
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/gettitlestring/gettitlestrin
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/gettitlestring\gettitlestrin
 g.sty
 Package: gettitlestring 2019/12/15 v1.6 Cleanup title references (HO)
- (C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/kvoptions/kvoptions.sty
+ (C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/kvoptions\kvoptions.sty
 Package: kvoptions 2022-06-15 v3.15 Key value format for package options (HO)
 ))
-\c@section@level=\count193
-) ("C:/Program Files/MiKTeX/tex/latex/etoolbox/etoolbox.sty"
+\c@section@level=\count195
+) (C:\Program Files\MiKTeX\tex/latex/etoolbox\etoolbox.sty
 Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
-\etb@tempcnta=\count194
+\etb@tempcnta=\count196
 )
-\@linkdim=\dimen141
-\Hy@linkcounter=\count195
-\Hy@pagecounter=\count196
+\@linkdim=\dimen142
+\Hy@linkcounter=\count197
+\Hy@pagecounter=\count198
 
-("C:/Program Files/MiKTeX/tex/latex/hyperref/pd1enc.def"
+(C:\Program Files\MiKTeX\tex/latex/hyperref\pd1enc.def
 File: pd1enc.def 2023-04-22 v7.00x Hyperref: PDFDocEncoding definition (HO)
+Now handling font encoding PD1 ...
+... no UTF-8 mapping file for font encoding PD1
 )
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/intcalc/intcalc.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/intcalc\intcalc.sty
 Package: intcalc 2019/12/15 v1.3 Expandable calculations with integers (HO)
 )
-\Hy@SavedSpaceFactor=\count197
+\Hy@SavedSpaceFactor=\count199
 
-("C:/Program Files/MiKTeX/tex/latex/hyperref/puenc.def"
+(C:\Program Files\MiKTeX\tex/latex/hyperref\puenc.def
 File: puenc.def 2023-04-22 v7.00x Hyperref: PDF Unicode definition (HO)
+Now handling font encoding PU ...
+... no UTF-8 mapping file for font encoding PU
 )
 Package hyperref Info: Hyper figures OFF on input line 4182.
 Package hyperref Info: Link nesting OFF on input line 4187.
@@ -164,25 +132,25 @@ Package hyperref Info: Plain pages OFF on input line 4197.
 Package hyperref Info: Backreferencing OFF on input line 4202.
 Package hyperref Info: Implicit mode ON; LaTeX internals redefined.
 Package hyperref Info: Bookmarks ON on input line 4449.
-\c@Hy@tempcnt=\count198
+\c@Hy@tempcnt=\count266
 
-("C:/Program Files/MiKTeX/tex/latex/url/url.sty"
+(C:\Program Files\MiKTeX\tex/latex/url\url.sty
 \Urlmuskip=\muskip16
 Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 )
 LaTeX Info: Redefining \url on input line 4787.
-\XeTeXLinkMargin=\dimen142
+\XeTeXLinkMargin=\dimen143
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/bitset/bitset.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/bitset\bitset.sty
 Package: bitset 2019/12/09 v1.3 Handle bit-vector datatype (HO)
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/bigintcalc/bigintcalc.sty
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/bigintcalc\bigintcalc.sty
 Package: bigintcalc 2019/12/15 v1.5 Expandable calculations on big integers (HO
 )
 ))
-\Fld@menulength=\count199
-\Field@Width=\dimen143
-\Fld@charsize=\dimen144
+\Fld@menulength=\count267
+\Field@Width=\dimen144
+\Fld@charsize=\dimen145
 Package hyperref Info: Hyper figures OFF on input line 6066.
 Package hyperref Info: Link nesting OFF on input line 6071.
 Package hyperref Info: Hyper index ON on input line 6074.
@@ -191,36 +159,32 @@ Package hyperref Info: Link coloring OFF on input line 6086.
 Package hyperref Info: Link coloring with OCG OFF on input line 6091.
 Package hyperref Info: PDF/A mode OFF on input line 6096.
 
-("C:/Program Files/MiKTeX/tex/latex/base/atbegshi-ltx.sty"
+(C:\Program Files\MiKTeX\tex/latex/base\atbegshi-ltx.sty
 Package: atbegshi-ltx 2021/01/10 v1.0c Emulation of the original atbegshi
 package with kernel methods
 )
-\Hy@abspage=\count266
-\c@Item=\count267
-\c@Hfootnote=\count268
+\Hy@abspage=\count268
+\c@Item=\count269
+\c@Hfootnote=\count270
 )
-Package hyperref Info: Driver (autodetected): hluatex.
+Package hyperref Info: Driver (autodetected): hpdftex.
 
-("C:/Program Files/MiKTeX/tex/latex/hyperref/hluatex.def"
-File: hluatex.def 2023-04-22 v7.00x Hyperref driver for luaTeX
+(C:\Program Files\MiKTeX\tex/latex/hyperref\hpdftex.def
+File: hpdftex.def 2023-04-22 v7.00x Hyperref driver for pdfTeX
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/stringenc/stringenc.sty
-Package: stringenc 2019/11/29 v1.12 Convert strings between diff. encodings (HO
-)
-)
-("C:/Program Files/MiKTeX/tex/latex/base/atveryend-ltx.sty"
+(C:\Program Files\MiKTeX\tex/latex/base\atveryend-ltx.sty
 Package: atveryend-ltx 2020/08/19 v1.0a Emulation of the original atveryend pac
 kage
 with kernel methods
 )
-\Fld@listcount=\count269
-\c@bookmark@seq@number=\count270
+\Fld@listcount=\count271
+\c@bookmark@seq@number=\count272
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/rerunfilecheck/rerunfilecheck.
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/rerunfilecheck\rerunfilecheck.
 sty
 Package: rerunfilecheck 2022-07-10 v1.10 Rerun checks for auxiliary files (HO)
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/generic/uniquecounter/uniquecounter.
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/generic/uniquecounter\uniquecounter.
 sty
 Package: uniquecounter 2019/12/15 v1.4 Provide unlimited unique counter (HO)
 )
@@ -228,34 +192,32 @@ Package uniquecounter Info: New unique counter `rerunfilecheck' on input line 2
 85.
 )
 \Hy@SectionHShift=\skip60
-) (C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/geometry/geometry.sty
+) (C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.sty
 Package: geometry 2020/01/02 v5.9 Page Geometry
 
-("C:/Program Files/MiKTeX/tex/generic/iftex/ifvtex.sty"
+(C:\Program Files\MiKTeX\tex/generic/iftex\ifvtex.sty
 Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
 )
-\Gm@cnth=\count271
-\Gm@cntv=\count272
-\c@Gm@tempcnt=\count273
-\Gm@bindingoffset=\dimen145
-\Gm@wd@mp=\dimen146
-\Gm@odd@mp=\dimen147
-\Gm@even@mp=\dimen148
-\Gm@layoutwidth=\dimen149
-\Gm@layoutheight=\dimen150
-\Gm@layouthoffset=\dimen151
-\Gm@layoutvoffset=\dimen152
-\Gm@dimlist=\toks20
+\Gm@cnth=\count273
+\Gm@cntv=\count274
+\c@Gm@tempcnt=\count275
+\Gm@bindingoffset=\dimen146
+\Gm@wd@mp=\dimen147
+\Gm@odd@mp=\dimen148
+\Gm@even@mp=\dimen149
+\Gm@layoutwidth=\dimen150
+\Gm@layoutheight=\dimen151
+\Gm@layouthoffset=\dimen152
+\Gm@layoutvoffset=\dimen153
+\Gm@dimlist=\toks19
 
-(C:/Users/ianch/AppData/Roaming/MiKTeX/tex/latex/geometry/geometry.cfg))
-("C:/Program Files/MiKTeX/tex/latex/l3backend/l3backend-luatex.def"
-File: l3backend-luatex.def 2023-04-19 L3 backend support: PDF output (LuaTeX)
-\l__color_backend_stack_int=\count274
-Inserting `l3color' in `luaotfload.parse_color'.
+(C:\Users\ianch\AppData\Roaming\MiKTeX\tex/latex/geometry\geometry.cfg))
+(C:\Program Files\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2023-04-19 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count276
 \l__pdf_internal_box=\box52
-)
-(./resume.aux)
-\openout1 = resume.aux
+) (resume.aux)
+\openout1 = `resume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -266,13 +228,6 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 14.
-LaTeX Font Info:    Trying to load font information for TS1+cmr on input line 1
-4.
- ("C:/Program Files/MiKTeX/tex/latex/base/ts1cmr.fd"
-File: ts1cmr.fd 2022/07/10 v2.5l Standard LaTeX font definitions
-)
-LaTeX Font Info:    ... okay on input line 14.
-LaTeX Font Info:    Checking defaults for TU/lmr/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
@@ -283,16 +238,15 @@ LaTeX Font Info:    ... okay on input line 14.
 LaTeX Font Info:    Checking defaults for PU/pdf/m/n on input line 14.
 LaTeX Font Info:    ... okay on input line 14.
 Package hyperref Info: Link coloring OFF on input line 14.
-
-(./resume.out) (./resume.out)
+(resume.out) (resume.out)
 \@outlinefile=\write3
+\openout3 = `resume.out'.
 
-\openout3 = resume.out
 
 *geometry* driver: auto-detecting
-*geometry* detected driver: luatex
+*geometry* detected driver: pdftex
 *geometry* verbose mode - [ preamble ] result:
-* driver: luatex
+* driver: pdftex
 * paper: letterpaper
 * layout: <same size as paper>
 * layoutoffset:(h,v)=(0.0pt,0.0pt)
@@ -324,60 +278,60 @@ Package hyperref Info: Link coloring OFF on input line 14.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 21--24
+Underfull \hbox (badness 10000) in paragraph at lines 22--25
 
  []
 
 
-Underfull \hbox (badness 10000) in paragraph at lines 25--28
+Underfull \hbox (badness 10000) in paragraph at lines 26--29
 
  []
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 35.
+(Font)              <10.95> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 35.
+(Font)              <8> on input line 38.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 35.
+(Font)              <6> on input line 38.
 
-Underfull \hbox (badness 10000) in paragraph at lines 34--36
+Underfull \hbox (badness 10000) in paragraph at lines 61--63
 
  []
 
 
 Package fancyhdr Warning: \headheight is too small (12.0pt): 
-(fancyhdr)                Make it at least 30.44029pt, for example:
-(fancyhdr)                \setlength{\headheight}{30.44029pt}.
+(fancyhdr)                Make it at least 30.20425pt, for example:
+(fancyhdr)                \setlength{\headheight}{30.20425pt}.
 (fancyhdr)                You might also make \topmargin smaller to compensate:
 
-(fancyhdr)                \addtolength{\topmargin}{-18.44029pt}.
+(fancyhdr)                \addtolength{\topmargin}{-18.20425pt}.
 
 [1{C:/Users/ianch/AppData/Local/MiKTeX/fonts/map/pdftex/pdftex.map}
 
 ]
-(./resume.aux)
+(resume.aux)
 Package rerunfilecheck Info: File `resume.out' has not changed.
 (rerunfilecheck)             Checksum: D41D8CD98F00B204E9800998ECF8427E;0.
-)
-
-Here is how much of LuaTeX's memory you used:
- 9166 strings out of 478263
- 125024,1977958 words of node,token memory allocated
- 426 words of node memory still in use:
-   3 hlist, 1 vlist, 1 rule, 2 glue, 3 kern, 1 glyph, 4 attribute, 52 glue_spec,
- 4 attribute_list, 1 write nodes
-   avail lists: 1:1,2:521,3:426,4:4,5:546,6:111,7:7507,8:2,9:570,10:3,11:642
- 29124 multiletter control sequences out of 65536+600000
- 32 fonts using 2267255 bytes
- 72i,11n,72p,290b,331s stack positions out of 10000i,1000n,20000p,200000b,200000s
-<//?/c:/program files/miktex/fonts/opentype/public/lm/lmroman8-regular.otf><//?/
-c:/program files/miktex/fonts/opentype/public/lm/lmroman10-italic.otf><//?/c:/pr
-ogram files/miktex/fonts/opentype/public/lm/lmroman10-bold.otf><//?/c:/program f
-iles/miktex/fonts/opentype/public/lm/lmroman12-bold.otf><//?/c:/program files/mi
-ktex/fonts/opentype/public/lm/lmroman10-regular.otf>
-Output written on resume.pdf (1 page, 34206 bytes).
-
-PDF statistics: 52 PDF objects out of 1000 (max. 8388607)
- 8 named destinations out of 1000 (max. 131072)
- 1 words of extra memory for PDF output out of 10000 (max. 100000000)
+ ) 
+Here is how much of TeX's memory you used:
+ 8616 strings out of 476315
+ 136648 string characters out of 5797011
+ 1869068 words of memory out of 5000000
+ 29000 multiletter control sequences out of 15000+600000
+ 517701 words of font info for 50 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 75i,11n,76p,293b,433s stack positions out of 10000i,1000n,20000p,200000b,200000s
+ <C:\Users\ianch\AppData\Local\MiKTeX\fonts/pk/ljfour/jknappen/ec/dpi600\tcrm
+1095.pk><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx10.pfb><C:/
+Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmbx12.pfb><C:/Program File
+s/MiKTeX/fonts/type1/public/amsfonts/cm/cmcsc10.pfb><C:/Program Files/MiKTeX/fo
+nts/type1/public/amsfonts/cm/cmmi10.pfb><C:/Program Files/MiKTeX/fonts/type1/pu
+blic/amsfonts/cm/cmr10.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts
+/cm/cmr8.pfb><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmti10.pfb
+><C:/Program Files/MiKTeX/fonts/type1/public/amsfonts/cm/cmtt10.pfb>
+Output written on resume.pdf (1 page, 119171 bytes).
+PDF statistics:
+ 65 PDF objects out of 1000 (max. 8388607)
+ 8 named destinations out of 1000 (max. 500000)
+ 1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
