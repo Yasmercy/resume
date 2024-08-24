@@ -1,11 +1,18 @@
 \documentclass[11pt]{article}
 
 \usepackage{fancyhdr}
-
 \usepackage{style}
 \usepackage{enumitem}
 \usepackage{hyperref}
+\usepackage[yyyymmdd]{datetime}
 \usepackage[letterpaper, margin=0.5in, top=0.8in]{geometry}
+
+\newdateformat{mydate}{\shortmonthname[\THEMONTH] \THEYEAR}
+\mydate
+
+\newcommand{\daterange}[4]{\formatdate{1}{#1}{#2} - \formatdate{1}{#3}{#4}}
+\newcommand{\daterangepres}[2]{\formatdate{1}{#1}{#2} - Present}
+\newcommand{\tetrio}{\textsc{tetr.io}\ }
 
 \setlength\parindent{0pt}
 
@@ -14,62 +21,86 @@
 
 \begin{document}
 
-\fancyhead[R]{901 W. Springfield Ave. \\ Urbana IL}
+\fancyhead[R]{Github \\ LinkedIn}
 \fancyhead[C]{\Huge \textbf{Ian Chen}}
 
 \fancyhead[L]{ianchen3@illinois.edu \\ (650) 505-6879}
 
 \section*{Education}
-\vspace*{-1mm}
+\vspace*{-2mm}
 
-\textbf{University of Illinois} Urbana-Champaign, College of Liberal Arts and Sciences \hfill \textbf{2023-Present} \\
-\emph{Bachelor of Science in Liberal Arts and Sciences in Statistics \& Computer Science} \\
-\emph{Cumulative GPA}: 3.98 / 4.00 \\
-\textbf{Henry M. Gunn High School} Palo Alto, California \hfill \textbf{2019-2023} \\
-\emph{High School Diploma} \\
+\textbf{University of Illinois} Urbana-Champaign, College of Liberal Arts and Sciences \hfill \daterangepres{8}{2024} \\
+\emph{Major in Statistics \& Computer Science} --- \emph{Cumulative GPA}: 3.98 / 4.00 \\
+\textbf{Henry M. Gunn High School} Palo Alto, California \hfill \daterange{8}{2019}{5}{2023} \\
 \emph{Cumulative GPA}: 4.33 / 4.00 \\
 
 \vspace*{-5mm}
 \rule{\textwidth}{0.1pt}
 \vspace*{-10mm}
 
-\section*{Experience}
-\vspace*{-1mm}
-
-\textbf{Maven Optronics} \hfill \textbf{2024} \\
-\underline{Software Engineer Intern --- MES developer}
-\begin{itemize}
-	\cramped
-    \item Implemented a materials traceability module for \emph{manufacturing enterprise system} --- sql and photo tracking barcode IDs of raw materials till assembled PCBA.
-    \item Automatic deployment of software releases with win32 installer (.msi) via administrative installation across NAS server
-    \item Developed user interfaces to automatically generate IPQC reports summarizing thousands of products
-
-\end{itemize}
-
-\textbf{University of Illinois} \hfill \textbf{2024} \\
-\underline{Computer Architecture Course Assistant} \\
-\underline{Physics Mechanics Learning Assistant}
-\begin{itemize}
-	\cramped
-	\item Designed laboratory experiments according to ISLE guidelines catering real world scenarios
-    \item Mentored introductory physics lab classes at scale (75+ students)
-\end{itemize}
-
-\rule{\textwidth}{0.1pt}
-\vspace*{-10mm}
-
 \section*{Technical Skills}
-\vspace*{-1mm}
+\vspace*{-2mm}
 
 \textbf{Programming Languages; Tools} \\
-Python, C++, C\#, Rust, Bash, Sql; Git, \LaTeX \\
+Python, C++, C\#, Rust, Bash, \textsc{sql}; Git, \LaTeX \\
 
 \vspace*{-5mm}
 \rule{\textwidth}{0.1pt}
 \vspace*{-10mm}
 
+\section*{Work Experience}
+\vspace*{-2mm}
+
+\textbf{University of Illinois} \\
+\emph{Computer Architecture Course Assistant} \hfill \daterangepres{8}{2024} {
+\begin{itemize}
+	\cramped
+	\item TBD
+\end{itemize}
+\emph{Physics Mechanics Learning Assistant} \hfill \daterange{1}{2024}{5}{2024}
+\begin{itemize}
+	\cramped
+	\item Designed laboratory experiments modeling real world scenarios according to ISLE guidelines.
+	\item Mentored introductory physics lab classes at scale (75+ students)
+\end{itemize}
+
+\textbf{Maven Optronics} \hfill \daterange{5}{2024}{8}{2024} \\
+\emph{Software Engineer Intern}
+\begin{itemize}
+	\cramped
+	\item Implemented Manufacturing Execution System (MES) materials traceability modules — populated mySQL tables to link raw material barcode IDs (with photo records) to assembled MiniLED boards.
+	\item Developed automatic deployment of software releases via win32 installer (.msi) through administrative installation across NAS server.
+	\item Developed Windows Desktop applications to automatically create Certificate of Analysis reports with syndicated IPQC \& FQC inspection data.
+\end{itemize}
+
+\rule{\textwidth}{0.1pt}
+\vspace*{-10mm}
+
+\section*{Projects}
+\vspace*{-2mm}
+
+\textbf{Directle: NLP-enabled linguistics game} \hfill \daterange{1}{2024}{5}{2024}
+\begin{itemize}
+	\cramped
+	\item Collaborated with three team members to build a full-stack website hosting an English word game. The game guides players to guess a secret word through one-word semantic clues.
+	\item Implemented a word2vec NLP model using the top 10M wikipedia articles which projected vocabulary into low-dimensional embeddings, allowing for quantification of word similarities.
+	\item Developed and deployed a backend REST API to query word vectors stored in a Postgres database and integrated with frontend React server.
+\end{itemize}
+
+\textbf{IVFish: Tetris AI $\gg$ Human} (\url{https://github.com/ivfish/bot}) \hfill \daterange{6}{2021}{8}{2023}
+\begin{itemize}
+	\cramped
+	\item Collaborated with two team members to develop an AI bot to compete in multiplayer Tetris on \tetrio server with over 4 million players. This bot successfully defeated a top 10 ranked player in the server
+	\item Implemented massive graph (30M+ nodes) parallel searching algorithms with specialized heuristics to search for optimal next moves within milliseconds.
+	\item Achieved 10x performance improvement in the graph search algorithm by optimizing code at the microarchitecture level through Intel hardware intrinsics.
+	\item Established websocket network protocol for communication with \tetrio multiplayer Tetris server.
+\end{itemize}
+
+\rule{\textwidth}{0.1pt}
+\vspace*{-10mm}
+
 \section*{Relevant Coursework}
-\vspace*{-1mm}
+\vspace*{-2mm}
 
 \textbf{Computer Science}
 \emph{Computer Architecture};
@@ -77,48 +108,15 @@ Python, C++, C\#, Rust, Bash, Sql; Git, \LaTeX \\
 \emph{Data Structures};
 \emph{Algorithms}
 
+\textbf{Statistics \& Math}
+\emph{Probability I \& II};
+\emph{Linear Algebra};
+\emph{Differential Equations};
+
 \textbf{Physics}
 \emph{Mechanics};
 \emph{E\&M};
-
 \emph{Thermodynamics};
-\emph{Quantum}
-
-
-\textbf{Education}
-\emph{Physics Pedagogy I; II}
-
-\rule{\textwidth}{0.1pt}
-\vspace*{-10mm}
-
-\section*{Projects}
-\vspace*{-1mm}
-
-\textbf{Directle} \hfill \textbf{2024} \\
-\emph{English word game directing users to secret word through semantic relationships}
-\begin{itemize}
-	\cramped
-    \item Calculated high dimensional vector space embeddings through word2vec algorithm for English vocabulary
-    \item Developed \emph{React} client querying \emph{Postgres} vector database that guides users to discover hidden key
-\end{itemize}
-
-\textbf{IVFish} (\url{https://github.com/ivfish/bot}) \hfill \textbf{2021-2023} \\
-\emph{Autonomous Bot for playing real-time competitive modern Tetris surpassing human ability}
-\begin{itemize}
-	\cramped
-    \item Implemented massive graph ($30M+$ nodes) parallel searching algorithms with specialized heuristics
-    \item Optimized code at the micro-architecture level through Intel hardware intrinsics
-    \item Established websocket network protocol with \textsc{tetr.io} multiplayer Tetris server
-\end{itemize}
-
-\rule{\textwidth}{0.1pt}
-\vspace*{-10mm}
-
-\section*{Interests}
-
-\vspace*{-1mm}
-
-CS and Physics Education;
-Combinatorics and Graph Algorithms
+\emph{Quantum Physics}
 
 \end{document}
