@@ -1,0 +1,138 @@
+\documentclass[11pt]{article}
+
+\usepackage{fancyhdr}
+\usepackage{style}
+\usepackage{enumitem}
+\usepackage{hyperref}
+\usepackage[yyyymmdd]{datetime}
+\usepackage[letterpaper, margin=0.5in, top=0.8in]{geometry}
+
+\newdateformat{mydate}{\shortmonthname[\THEMONTH] \THEYEAR}
+\mydate
+
+\newcommand{\daterange}[4]{\formatdate{1}{#1}{#2} - \formatdate{1}{#3}{#4}}
+\newcommand{\daterangepres}[2]{\formatdate{1}{#1}{#2} - Present}
+\newcommand{\tetrio}{\textsc{tetr.io}\ }
+
+\setlength\parindent{0pt}
+
+\pagenumbering{gobble}
+\pagestyle{fancy}
+
+\begin{document}
+
+\fancyhead[R]{\url{https://yasmercy.github.io} \\ \url{linkedin.com/in/ian-chen-b92491324/}}
+\fancyhead[C]{\Huge \textbf{Ian Chen}}
+\fancyhead[L]{ianchen3@illinois.edu \\ (650) 505-6879}
+
+\section*{Education}
+\vspace*{-2.5mm}
+
+\textbf{University of Illinois} Urbana-Champaign, College of Liberal Arts and Sciences \hfill \daterangepres{8}{2023} \\
+\emph{Major in Statistics \& Computer Science} --- \emph{Cumulative GPA}: 3.98 / 4.00 \\
+\textbf{Henry M. Gunn High School} Palo Alto, California \hfill \daterange{8}{2019}{5}{2023} \\
+\emph{Cumulative GPA}: 4.33 / 4.00 \\
+
+\vspace*{-5mm}
+\rule{\textwidth}{0.1pt}
+\vspace*{-10mm}
+
+\section*{Publications}
+\vspace*{-2.5mm}
+
+\begin{itemize}
+    \cramped
+    \item Vu-Le, T., Park, M., \textbf{Chen, I.}, Chacko, G., Warnow, T. (2025).
+          Using Stochastic Block Models for Community Detection: The issue of edge-connectivity.
+          Applied Network Science. \href{https://doi.org/10.1007/s41109-025-00747-2}{10.1007/s41109-025-00747-2}
+    \item Vu-Le, T., Lamy, J., \textbf{Chen, I.}, Park, M., Harb, E., Chacko, G., Warnow, T. (2025).
+          Dense Subgraph Clustering and a New Cluster Ensemble Method.
+          Complex Networks 2025. \href{https://arxiv.org/abs/2508.17013v2}{10.48550/arXiv.2508.17013v2}
+\end{itemize}
+
+\rule{\textwidth}{0.1pt}
+\vspace*{-10mm}
+
+\section*{Technical Skills}
+\vspace*{-2.5mm}
+
+\textbf{Programming Languages; Tools} \\
+Python, C++, C\#, R, Rust, Bash, SQL, MIPS; Git, \LaTeX \\
+
+\vspace*{-5mm}
+\rule{\textwidth}{0.1pt}
+\vspace*{-10mm}
+
+\section*{Work Experience}
+\vspace*{-2.5mm}
+
+\textbf{Siebel School of Computing and Data Science} \\
+\emph{Undergraduate Research Assistant} \hfill \daterangepres{5}{2025}
+\begin{itemize}
+    \cramped
+    \item Conducted a literature review comparing state-of-the-art (SotA) community detection (CD) algorithms
+    \item Designed experiments demonstrating that a novel CD algorithm outperforms the SotA alternatives.
+    \item Implemented a new highly parallizable community search algorithm on a high performance system with terabit memory and 128-cores computing nodes.
+    \item Edited the manuscripts for two publications accepted in peer reviewed conferences and journals.
+\end{itemize}
+
+\textbf{Maven Optronics} \hfill \daterange{5}{2024}{8}{2024} \\
+\emph{Software Engineer Intern}
+\begin{itemize}
+    \cramped
+    \item Implemented Manufacturing Execution System (MES) materials traceability modules — populated mySQL tables to link raw material barcode IDs (with photo records) to assembled MiniLED boards.
+    \item Developed automatic deployment of software releases via win32 installer (.msi) through administrative installation across NAS server.
+\end{itemize}
+
+\rule{\textwidth}{0.1pt}
+\vspace*{-10mm}
+
+\section*{Projects}
+\vspace*{-2.5mm}
+
+\textbf{ClassFS: course explorer filesystem} (\url{https://github.com/Yasmercy/ClassFS}) \hfill \daterange{8}{2024}{12}{2024}
+\begin{itemize}
+    \cramped
+    \item Collaborated with two team members to build virtual file system through FUSE, allowing users to browse the UIUC course catalog with their file explorer of choice.
+    \item Implemented system calls hooks for \verb+open+, \verb+read+, \verb+readdir+, and \verb+stat+.
+\end{itemize}
+
+\textbf{Directle: NLP-enabled linguistics game} (\url{https://github.com/Yasmercy/Directle}) \hfill \daterange{1}{2024}{5}{2024}
+\begin{itemize}
+    \cramped
+    \item Collaborated with three team members to build a full-stack website hosting an English word game. The game guides players to guess a secret word through one-word semantic clues.
+    \item Implemented a word2vec NLP model using the top 10M wikipedia articles to calculate of word similarities.
+\end{itemize}
+
+\rule{\textwidth}{0.1pt}
+\vspace*{-10mm}
+
+\section*{Relevant Coursework}
+\vspace*{-2.5mm}
+
+\textbf{Computer Science:}
+\emph{Communication Networks};
+\emph{Operating Systems};
+\emph{Computer Architecture I \& II};
+\emph{Algorithms I \& II};
+\emph{Randomized Algorithms};
+\emph{Computational Biology}
+
+\textbf{Statistics \& Math:}
+\emph{Probability I \& II};
+\emph{Modeling I \& II};
+\emph{Numerical Analysis};
+\emph{Graph Theory};
+\emph{Linear Algebra};
+\emph{Differential Equations};
+\emph{Real Analysis};
+\emph{Abstract Algebra}
+
+\textbf{Physics:}
+\emph{Mechanics};
+\emph{E\&M};
+\emph{Thermodynamics};
+\emph{Quantum Physics};
+\emph{Special Relativity}
+
+\end{document}
