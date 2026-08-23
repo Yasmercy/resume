@@ -1,0 +1,101 @@
+%% cvpub.sty -- render a biblatex bibliography as moderncv \cvitem rows, with
+%% the year in the left hint column and the reference in the main column.
+%%
+%% Preamble:
+%%
+%%   \usepackage{cvpub}
+%%   \addbibresource{refs}
+%%   \nocite{*}
+%%
+%% Body:
+%%
+%%   \printbibliography[env=cvpubs, heading=cvpubsubsection,
+%%                      title={Journal and Refereed Conference Publications},
+%%                      notkeyword=preprint]
+%%   \printbibliography[env=cvpubs, heading=cvpubsubsection,
+%%                      title={Preprints}, keyword=preprint]
+%%
+%% Package options:
+%%
+%%   annotation=me    annotation marking the name to bold; mark yourself in the
+%%                    .bib entry with a companion field giving your 1-based
+%%                    position, e.g. author+an = {3=me}
+%%   maxnames=99      author-list cutoff before "et al."
+%%   itemsep=0.5em    vertical space between entries
+%%
+%% Requires biber, not bibtex.
+\NeedsTeXFormat{LaTeX2e}
+\ProvidesPackage{cvpub}[2026/08/10 v1.0 moderncv publication lists from .bib files]
+
+\RequirePackage{kvoptions}
+
+\SetupKeyvalOptions{family=cvpub,prefix=cvpub@}
+\DeclareStringOption[me]{annotation}
+\DeclareStringOption[99]{maxnames}
+\DeclareStringOption[0.5em]{itemsep}
+\ProcessKeyvalOptions*
+
+\RequirePackage[
+    backend=biber,
+    style=authoryear,
+    sorting=ydnt,
+    giveninits=true,
+    doi=true,
+    url=false,
+    isbn=false,
+    eprint=false,
+    dashed=false,
+    uniquename=false,
+    uniquelist=false,
+]{biblatex}
+
+% Injected after loading: an option value is a macro, and inlining a macro into
+% the \RequirePackage option list above fails silently.
+\edef\cvpub@setmaxnames{%
+    \noexpand\ExecuteBibliographyOptions{%
+        maxbibnames=\cvpub@maxnames,minbibnames=\cvpub@maxnames}}
+\cvpub@setmaxnames
+
+% Both \expandafters are load-bearing: \ifitemannotation matches its argument as
+% literal tokens, so an unexpanded \cvpub@annotation silently never matches.
+\newcommand*{\cvpub@markme}[1]{%
+    \expandafter\ifitemannotation\expandafter{\cvpub@annotation}{\textbf{#1}}{#1}%
+}
+
+\renewcommand*{\mkbibnamefamily}[1]{\cvpub@markme{#1}}
+\renewcommand*{\mkbibnamegiven}[1]{\cvpub@markme{#1}}
+\renewcommand*{\mkbibnameprefix}[1]{\cvpub@markme{#1}}
+\renewcommand*{\mkbibnamesuffix}[1]{\cvpub@markme{#1}}
+
+% Suppresses the printed date only. Do NOT replace this with \clearfield{year}:
+% the hint column below still reads that field, and clearing it blanks the years.
+\renewbibmacro*{date+extradate}{}
+
+\DeclareFieldFormat[article,inbook,incollection,inproceedings,unpublished]{title}%
+{\mkbibquote{#1\isdot}}
+
+% The \hfill is load-bearing, not decoration: LaTeX re-boxes the label to
+% \labelwidth and restores the glue, which is what right-aligns the year.
+\newcommand*{\cvpub@makelabel}[1]{\hfill\hintstyle{#1}}
+
+% \list re-evaluates its first argument at every \item, inside the entry
+% context, which is the only reason \printfield works here.
+\defbibenvironment{cvpubs}
+{\list{\printfield{year}}
+    {\setlength{\labelwidth}{\hintscolumnwidth}%
+        \setlength{\labelsep}{\separatorcolumnwidth}%
+        \setlength{\leftmargin}{\labelwidth}%
+        \addtolength{\leftmargin}{\labelsep}%
+        \setlength{\itemindent}{0pt}%
+        \setlength{\listparindent}{0pt}%
+        \setlength{\topsep}{0pt}%
+        \setlength{\partopsep}{0pt}%
+        \setlength{\parsep}{0pt}%
+        \setlength{\itemsep}{\cvpub@itemsep}%
+        \let\makelabel\cvpub@makelabel}}
+{\endlist}
+{\item}
+
+\defbibheading{cvpubsubsection}[\bibname]{\subsection{#1}}
+
+\endinput

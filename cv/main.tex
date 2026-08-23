@@ -1,0 +1,84 @@
+\documentclass[11pt,a4paper,sans]{moderncv}
+
+\moderncvcolor{blue}
+\moderncvstyle{classic}
+
+\usepackage[scale=0.8]{geometry}
+% \setlength{\footskip}{136.00005pt}
+%\setlength{\hintscolumnwidth}{3cm}                
+%\setlength{\makecvheadnamewidth}{10cm}            
+
+\usepackage[english]{babel}
+
+\usepackage{cvpub}
+\addbibresource{refs.bib}
+\nocite{*}
+
+\usepackage[normalem]{ulem}
+\newcommand*{\cvlink}[2]{\href{#1}{\textcolor{color1}{\uline{#2}}}}
+
+\usepackage[bottom]{footmisc}
+\newcommand\blfootnote[1]{%
+  \begingroup
+  \renewcommand\thefootnote{}\footnote{#1}%
+  \addtocounter{footnote}{-1}%
+  \endgroup
+}
+\nopagenumbers
+
+\name{Ian}{Chen}
+\title{Curriculum Vit\ae}                               
+\phone[mobile]{(650)~505~6879}                   
+\email{ianchen3@illinois.edu}                               
+% \homepage{https://yasmercy.github.io}
+
+% \social[github]{IanChenUIUC}
+\social[orcid]{0009-0000-3777-3603}
+% \social[googlescholar]{}            
+
+\begin{document}
+\makecvtitle
+\blfootnote{Last Edited: \today}
+
+\section{Research Interests}
+
+Clustering and Community Detection, Algorithmic Engineering, Parallel Algorithms, Graph Algorithms
+
+\section{Education}
+
+\cventry{Fall 2023 -- Spring 2027}{BSLAS Statistics and Computer Science}{University of Illinois Urbana-Champaign}{}{}{Minor in Physics}
+
+\section{Publications}
+
+\printbibliography[
+    env=cvpubs,
+    heading=cvpubsubsection,
+    title={Journal and Refereed Conference Publications},
+    notkeyword=preprint]%
+
+\printbibliography[
+    env=cvpubs,
+    heading=cvpubsubsection,
+    title={Preprints},
+    keyword=preprint]%
+
+\section{Teaching Experience}
+
+\cventry{Fall 2024 -- Fall 2025}{Undergraduate Course Assistant}{University of Illinois Urbana-Champaign}{}{}{
+    \begin{itemize}
+        \item CS 473 -- Algorithms (Fall 2025)
+        \item CS 233 -- Computer Architecture (Fall 2024, Spring 2025)
+    \end{itemize}
+}
+
+\section{Student Organizations}
+
+\cventry{Fall 2025 -- Present}{Admin}{ACM \cvlink{https://www.cstheory.org/}{SIGma}}{}{}{Special Interest Group in Math and Algorithms}
+
+\section{Professional Experience}
+
+\cventry{Summer 2024}{Software Engineering Intern}{Maven Optronics}{}{}{}
+
+\end{document}
+
+
